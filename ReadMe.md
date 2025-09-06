@@ -27,6 +27,7 @@ The solution includes a Lambda function, IAM role, CloudWatch Events, and option
    ```
 
 3. **Write the Lambda function (Python 3.12/3.13):**
+   - See [lambda.py](./lambda.py)
    - Use boto3 to describe DB connections.
    - If idle (no connections) for threshold minutes, stop the DB.
    - Optionally, allow manual start/stop via API Gateway trigger.
